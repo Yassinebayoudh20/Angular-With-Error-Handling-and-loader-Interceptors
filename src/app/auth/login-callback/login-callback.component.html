@@ -1,0 +1,6 @@
+<p>login-callback works!</p>
+<button (click)="showAccessToken()">Show Access Token</button>
+<button (click)="signout()">Logout</button>
+<button (click)="login()">Login</button>
+{{(userData$ | async) | json}}
+<pre>{{accessToken}}</pre>
